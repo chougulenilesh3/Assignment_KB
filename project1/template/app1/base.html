@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+ {% block head %}
+<head>
+    <meta charset="UTF-8">
+    <title>base</title>
+
+
+
+<link rel="stylesheet" href="{% static 'DemoApp/style.css' %}">
+
+
+
+
+</head>
+   {% endblock %}
+<body>
+{% block main %}
+  {% if user.is_authenticated %}
+    <p>Hello{{user.username}}</p>
+
+    <p><a href="{% url 'logout' %}">Logout</a></p>
+  {% else %}
+    <p><a href="{% url 'login' %}">Login</a></p>
+    <p><a href="{% url 'resister' %}">Register</a></p>
+   {% endif %}
+{% endblock %}
+</body>
+</html>
