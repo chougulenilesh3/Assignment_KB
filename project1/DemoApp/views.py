@@ -6,7 +6,9 @@ from django.http import HttpResponse
 from django.contrib.auth import authenticate,login,logout
 from django.contrib import messages
 
-# Create your views here.
+# Create your views here.#
+
+##############################################################
 def home1(request):
     model1 = UserRegistrationModel.objects.all()
     template_name = 'app1/login1.html'
