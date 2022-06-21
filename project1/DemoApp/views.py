@@ -6,6 +6,7 @@ from django.http import HttpResponse
 from django.contrib.auth import authenticate,login,logout
 from django.contrib import messages
 
+##demo app
 # Create your views here.
 def home1(request):
     model1 = UserRegistrationModel.objects.all()
