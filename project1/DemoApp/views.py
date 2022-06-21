@@ -7,7 +7,8 @@ from django.contrib.auth import authenticate,login,logout
 from django.contrib import messages
 
 # Create your views here.#
-
+def abc():
+    pass
 ##############################################################
 def home1(request):
     model1 = UserRegistrationModel.objects.all()
